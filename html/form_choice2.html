@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <form action="http://localhost/order.php">
+            <p>
+                붉은색 : <input type="radio" name= "color" value="red">
+                검은색 : <input type="radio" name= "color" value="black" checked><!--name을 같게 해줘야 하나를 눌렀을때 다른 버튼은 선택취소댐-->
+            </p>
+            <p>
+                파란색 : <input type="radio" name= "color1" value="blue">
+                흰색 : <input type="radio" name= "color1" value="white"><!--name을 같게 해줘야 하나를 눌렀을때 다른 버튼은 선택취소댐-->
+            </p>
+
+            <p>
+                <h1>사이즈(다중선택)</h1>
+                95 : <input type = "checkbox" name= "size" value="95">
+                100 : <input type = "checkbox" name= "size" value = "100"checked>
+                105 : <input type = "checkbox" name= "size" value = "105">
+            </p>
+            <input type="submit">
+        </form>
+    </body>
+</html>
