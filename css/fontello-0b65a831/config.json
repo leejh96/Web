@@ -1,0 +1,28 @@
+{
+  "name": "",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "53c28626072159c49f33b71d67138ad9",
+      "css": "commenting",
+      "code": 62074,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "fb15371451b9110f93afcaa70d6ea98d",
+      "css": "bluetooth",
+      "code": 62099,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "39e2e6682c28e1e3b5f49825a19717c4",
+      "css": "note",
+      "code": 9834,
+      "src": "entypo"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding-top: 30px;
+        }
+        #parent, #other{
+            border:5px solid tomato;
+        }
+        #me{
+            background-color: black;
+            color: white;
+            position: fixed;/*스크롤이 생겨서 내리더라도 그위치에 고정시켜서 계속 보일수 있도록함 me가 계속보인다.*/
+            right:0;
+            top: 0;/*0은 단위 필요 없음*/
+            width: 100%;
+            text-align: center;
+        }
+        #large{
+            height: 10000px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="other">other</div>
+    <div id="parent">
+        parent
+        <div id="me">me</div>
+    </div>
+    <div id = "large"></div>
+</body>
+</html>

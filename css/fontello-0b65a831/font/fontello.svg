@@ -1,0 +1,16 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2020 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="note" unicode="&#x266a;" d="M381 820q0-42 46-97t90-100 61-119-39-154q-20-34-26-16-2 6 0 16 10 18 6 56t-13 78-43 73-82 41l0-536q2-48-37-95t-105-71q-74-28-143-8t-89 76 20 115 116 85q86 30 158 4l0 652 80 0z" horiz-adv-x="582" />
+
+<glyph glyph-name="commenting" unicode="&#xf27a;" d="M357 350q0 30-21 51t-50 20-51-20-21-51 21-50 51-21 50 21 21 50z m214 0q0 30-20 51t-51 20-50-20-21-51 21-50 50-21 51 21 20 50z m215 0q0 30-21 51t-51 20-50-20-21-51 21-50 50-21 51 21 21 50z m214 0q0-97-67-179t-182-130-251-48q-61 0-118 10-96-97-242-128-29-6-48-7-7-1-13 3t-7 10q-2 9 11 21 3 3 13 12t15 13 13 14 13 18 11 20 12 27 8 32 7 41q-82 50-128 121t-47 150q0 97 67 179t182 130 251 48 251-48 182-130 67-179z" horiz-adv-x="1000" />
+
+<glyph glyph-name="bluetooth" unicode="&#xf293;" d="M469 262l83-82-83-83z m0 341l83-83-83-82z m-73-683l259 259-171 171 171 171-259 259v-341l-142 142-52-52 179-179-179-179 52-52 142 142v-341z m401 430q0-117-17-204t-49-143-79-91-101-48-122-14-123 14-101 48-79 91-48 143-18 204 18 204 48 143 79 91 101 48 123 14 122-14 101-48 79-91 49-143 17-204z" horiz-adv-x="857.1" />
+</font>
+</defs>
+</svg>

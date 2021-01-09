@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            background-color: powderblue;
+            display: flex; /*flex를 쓰기위해선 부모에게 이 명령을 해줘야한다.*/
+            height: 200px;
+            /* flex-direction: row-reverse; default는 row */
+            flex-direction: column-reverse;
+        }
+        .item{
+            background-color: tomato;
+            color: white;
+            border: 1px solid white;
+            /* flex-grow: 1; 여백이 남지않고 각각의 item들이 공간을 나눠가짐*/
+        }
+        /*아이템 클래스 중에 2번째에 해당하는 아이템을 선택*/
+        .item:nth-child(2){
+            /* flex-basis: 300px;  2번째 아이템에 사이즈 넓힘 */
+            flex-shrink: 0;/* default 1, 홈페이지의 크기를 줄이더라도 shrink를 0으로 한다면 해당 아이템의 크기가 줄어들지 않는다. 그러나 1이상으로 할경우 숫자가 높을수록 더 많이 더빨리 줄어든다*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+</html>

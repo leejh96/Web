@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            font-size: 3rem;
+            display : inline-block;
+            /* transition-property: all; a 태그에 대한 모든 효과에 대해 전환이 일어난다. */
+            /* transition-duration: 0.1s; 모든효과가 지속되는 시간 */
+            /* transition: all 0.1s; */
+            transition: font-size 1s, transform 0.1s;
+            transition-delay: 1s;/*transform효과를 지연*/
+            
+        }
+
+        a:active{
+            transform:translate(20px, 20px); /*transform 효과는 해당요소고 block level element나 inline-block element일 때만 사용가능*/
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <a href="#">Click</a>
+</body>
+</html>

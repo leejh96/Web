@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent, #other{
+            border:5px solid tomato;
+        }
+        #grand{
+            position: relative;/* absolute로 된 요소는 부모가 포지션을 지정 안했을때는 html을 기준으로하지만 position을 relative로 지정하게 되면 그 위치에서 위치를 잡는다*/
+        }
+        #me{
+            background-color: black;
+            color: white;
+            position: absolute;/*html 기준으로 할때 absolute사용 absolute 사용시 부모와 자식 관계가 없어진다. 따라서 크기가 자신의 content만하게 작아졌다*/
+            left:0;
+            top: 0;/*0은 단위 필요 없음*/
+        }
+    </style>
+</head>
+<body>
+    <div id="other">other</div>
+    <div id="grand">
+        <div id="parent">
+            parent
+            <div id="me">me</div>
+        </div>
+    </div>
+</body>
+</html>

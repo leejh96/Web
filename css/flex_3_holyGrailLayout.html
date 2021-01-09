@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            display: flex;
+            align-items: center;/*body부분이 웹사이트 중간에서 시작, 이건 세로를 기준으로 중앙*/
+            justify-content: center;/*body 부분이 웹사이트 정중앙에서 시작, 이건 가로를 기준으로 중앙*/
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            width: 800px;
+            border: 1px solid gray;
+        }
+        header{
+            border-bottom: 1px solid gray;
+            padding-left: 20px;
+        }
+        footer{
+            border-top: 1px solid gray;
+            padding: 20px;
+            text-align: center;
+        }
+        .content{
+            display: flex;
+        }
+        .content nav{
+            border-right: 1px solid gray;
+        }
+        .content aside{
+            border-left: 1px solid gray;
+        }
+        nav, aside{
+            flex-basis: 150px;
+            flex-shrink: 0;
+        }
+        main{
+            padding: 10px;
+        }
+        nav{
+            order: 0;/* 요소의 순서를 바꿀수 있다*/
+        }
+        main{
+            order: 1;
+        }
+        aside{
+            order: 2;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>생활코딩</h1>
+        </header>
+        <section class="content">
+            <nav>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </nav>
+            <main>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, voluptate?    
+            </main>
+            <aside>
+                AD
+            </aside>
+        </section>
+        <footer>
+            <a href="http://opentutorials.org/course/1">홈페이지</a>
+        </footer>
+    </div>
+</body>
+</html>

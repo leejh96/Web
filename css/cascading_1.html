@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            /* 우선순위는 li태그에서 바로 하는게 제일 높고 그다음 # 그다음. 그다음 style이다*/
+            li{
+                color: red !important;
+            }
+            #idsel{
+                color: blue;
+            }
+            .classsel{
+                color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>HTML</li>
+            <li id="idsel" class="classsel" style="color: powderblue;">CSS</li>
+            <li>JavaScript</li>
+        </ul>
+        cascading 우선순위</li>
+        <ol>
+            <li>!important</li>
+            <li>style attribute</li>
+            <li>id selector</li>
+            <li>class selector</li>
+            <li>style tag selector</li>
+        </ol>
+    </body>
+</html>

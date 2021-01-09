@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+        /* ul부분만 하기 위해서 ul li 사용 ol li는 ol부분만 고칠때 사용 */
+            ul li{
+                color:red
+            }
+        /* ol의 바로 밑 li만 값을 주고 싶을 땐 >를 사용한다. ol이 여러개이면 id를 주어 나누면 댐(꼭 ol이 아니여도가능)*/
+            #lecture>li{
+                border:1px solid red;
+                color:blue
+            }
+            ul,ol{
+                /*두가지를 같이줘야할 때 ,를 사용하기도 함*/
+                background-color: powderblue;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>html</li>
+            <li>css</li>
+            <li>javaScript</li>
+        </ul>
+        <ol id ="lecture">
+            <li>html</li>
+            <li>css</li>
+                <ol>
+                    <li>selector</li>
+                    <li>declaration</li>
+                </ol>
+            <li>javaScript</li>
+        </ol>
+    </body>
+</html>

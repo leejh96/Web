@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            *{
+                box-sizing: border-box;/*이것을 사용하여 두상자의 크기를 같게 만든다.*/
+            
+            }
+            div{
+                margin:10px;
+                width:150px;/*두 상자의 크기가 다른이유는 border안에 박스사이즈를 width로 바꾸기때문에 border크기는 다르지만 안에 상자는 같아진다*/
+            }
+            #small{
+                border:10px solid black;
+            }
+            #large{
+                border:30px solid black
+            }
+        </style>
+    </head>
+    <body>
+        <div id="small">hello</div>
+        <div id="large">hello</div>
+    </body>
+</html>

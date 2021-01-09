@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            background-color: powderblue;
+            display: flex; /*flex를 쓰기위해선 부모에게 이 명령을 해줘야한다.*/
+            height: 200px;
+            /* flex-direction: row-reverse; default는 row */
+            flex-direction: column-reverse;
+        }
+        .item{
+            background-color: tomato;
+            color: white;
+            border: 1px solid white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+</html>

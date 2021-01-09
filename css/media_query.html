@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /*화면의 크기가 500px이 되었을 때 배경색을 red로 하겠다 이상, 이하는 포함 x*/
+        /*@media (width:500px){
+            body{
+                background-color: red;
+            }
+        }*/
+        /*화면의 크기가 500px 이하가 되었을 때 배경생을 red로 하겠다.*/
+        /*@media (max-width:500px){
+            body{
+                background-color: red;
+            }
+        }*/
+        /*화면의 크기가 500px 이상이 되면 배경색을 red로 하겠다.*/
+        /*@media (min-width:500px){
+            body{
+                background-color: red;
+            }
+        }*/
+        /*500px 이하에선 red, 501~600px에선 green, 601px이상은 blue*/
+        /*만약 red와 green의 위치를 바꾸면 원하는대로 되지 않는다 이건 cascading과 관련있는데 코드가 나중에 나오는 것이 우선순위가 높아진다. 따라서 바꾸게 되면 green은 실행안된다.*/
+        @media (max-width:600px){
+            body{
+                background-color: green;
+            }
+        }
+        @media (max-width:500px){
+            body{
+                background-color: red;
+            }
+        }
+        @media (min-width:601px){
+            body{
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
