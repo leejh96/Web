@@ -1,0 +1,46 @@
+<!--중복제거-->
+<!doctype html>
+
+<html>
+    <head>
+        <style>
+            body{
+                background-color: white;
+                color: black;
+            }
+            h1{
+                color: blue;
+                text-decoration: underline;
+            }
+            li{
+                color: blue;
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>WEB</h1>
+        
+        <input type="button" value="night" onclick="
+            var target = document.querySelector('body');
+            if(this.value === 'night'){
+                target.style.backgroundColor='black';
+                target.style.color='white';
+                this.value = 'day';
+            }
+            else{
+                target.style.backgroundColor='white';
+                target.style.color='black';
+                this.value = 'night'
+            }
+        ">
+        <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ol>
+
+        <h2>JavaScript</h2>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id voluptas accusamus exercitationem libero illum, repudiandae itaque unde dicta culpa quis, quasi debitis aliquid soluta pariatur? Quis quas aliquid rem et pariatur odio animi, quam temporibus dolorem reiciendis, veritatis amet magni fugit consectetur officia dolores alias corporis saepe ex impedit voluptate?
+    </body>
+</html>

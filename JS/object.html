@@ -1,0 +1,71 @@
+<!doctype html>
+
+<html>
+    <head>
+        <script>
+            var body = {
+
+                setfontColor:function(color){
+                    var target = document.querySelector('body');
+                    target.style.color=color;
+                },
+                setbackColor:function(color){
+                    var target = document.querySelector('body');
+                    target.style.backgroundColor=color;
+                }
+            }
+            var links = {
+                setlinkColor:function(color){
+                    var alist = document.querySelectorAll('a');//node list
+                    var i = 0
+
+                    while(i < alist.length){
+                        alist[i].style.color = color;
+                        i = i + 1; 
+                    }
+                }
+            }
+
+            function nightDayHandler(self){
+                
+                if(self.value === 'night'){
+                    body.setbackColor('black');
+                    body.setfontColor('white');
+                    self.value = 'day';
+                    links.setlinkColor('powderblue');
+                }
+                else{
+                    body.setbackColor('white');
+                    body.setfontColor('black');
+                    self.value = 'night'
+                    links.setlinkColor('blue');
+                }
+            }
+        </script>
+        <style>
+            body{
+                background-color: white;
+                color: black;
+            }
+            li{
+                color: blue;
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <h1><a href="#">WEB</a></h1>
+        
+        <input type="button" value="night" onclick="
+            nightDayHandler(this)
+        ">
+        <ol>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+        </ol>
+
+        <h2>JavaScript</h2>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id voluptas accusamus exercitationem libero illum, repudiandae itaque unde dicta culpa quis, quasi debitis aliquid soluta pariatur? Quis quas aliquid rem et pariatur odio animi, quam temporibus dolorem reiciendis, veritatis amet magni fugit consectetur officia dolores alias corporis saepe ex impedit voluptate?
+    </body>
+</html>
