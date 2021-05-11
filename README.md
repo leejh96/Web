@@ -1,2 +1,2 @@
-생활코딩
-JavaScript
+# 생활코딩
+HTML, CSS, JavaScript , React
