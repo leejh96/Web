@@ -1,0 +1,9 @@
+  package.json에서
+  core는 바벨에 기본적인거 들어있는 것 , preset-env는 최신문법이 옛날문법을 지원하도록 해주고,
+  preset-react는 jsx문법 지원, babel-loader 는 웹팩과 바벨을 연결
+
+  devServer를 만들기위해 사용 설치 후에 webpack.config.js를 변경
+  @babel/plugin-proposal-class-properties
+  @pmmmwh/react-refresh-webpack-plugin
+  react-refresh
+  webpack-dev-server
