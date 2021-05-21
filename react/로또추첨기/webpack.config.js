@@ -1,7 +1,7 @@
 const refreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
 const path = require('path');
 module.exports = {
-    name : 'rockScissorsPaper',
+    name : 'lotto',
     mode : 'development',
     devtool : 'eval',
     resolve : {
